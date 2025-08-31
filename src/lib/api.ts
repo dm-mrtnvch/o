@@ -7,7 +7,6 @@ export async function loginRequest(login: string, password: string): Promise<boo
     body: JSON.stringify({ login, password }),
     credentials: 'include',
   });
-  console.log('sdfdsf')
   try {
     const data = await res.json();
     return Boolean(data?.ok);
