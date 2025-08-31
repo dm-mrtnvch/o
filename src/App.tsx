@@ -1,4 +1,3 @@
-import { Toaster } from '@/components/ui/sonner'
 import AppLayout from '@/layouts/AppLayout'
 import LoginPage from '@/pages/Login'
 import HomePage from '@/pages/Home'
@@ -23,7 +22,6 @@ export default function App() {
         </Route>
         <Route path="*" element={<Navigate to={isAuthenticated() ? '/' : '/login'} replace />} />
       </Routes>
-      <Toaster />
     </BrowserRouter>
   )
 }
